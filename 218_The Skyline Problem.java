@@ -59,8 +59,9 @@ class Solution {
 		}
 		List<List<Integer>> res = new ArrayList<>();
 		int start = 0;
-		int height = 0;                                   // 之前的高度
-		for (Map.Entry<Integer, Integer> entry : pmMap.entrySet()) {
+		int height = 0;                 // 之前的高度
+// 在遍历pmMap每一条记录的过程中, 因为pmMap是TreeMap, 所以它的key一定是依次升序的 !!!		
+for (Map.Entry<Integer, Integer> entry : pmMap.entrySet()) {
 			int curPosition = entry.getKey();
 			int curMaxHeight = entry.getValue();
 			if (height != curMaxHeight) {
