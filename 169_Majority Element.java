@@ -1,5 +1,6 @@
 //和子数组最大和一样，还是两个变量
 //统一写成以下格式（和 229. Majority Element II 一样的格式）
+//Boyer-Moore投票算法
 class Solution {
 	public int majorityElement(int[] nums) {
 		int n = nums.length;
